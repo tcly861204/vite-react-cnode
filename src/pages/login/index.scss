@@ -1,0 +1,38 @@
+@include b(login) {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  text-align: center;
+  @include e(wrapper) {
+    width: 100%;
+  }
+  @include e(item) {
+    margin-bottom: 15px;
+    height: 45px;
+  }
+  .title {
+    font-size: $f46;
+    padding-bottom: 20px;
+  }
+  input {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    padding: 0 13px;
+    background: none;
+  }
+  button {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    background: $bg01;
+    color: #fff;
+    font-size: $f36;
+  }
+}

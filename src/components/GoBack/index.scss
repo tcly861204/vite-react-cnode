@@ -1,0 +1,37 @@
+@include b(back) {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 45px;
+  background: $bg01;
+  z-index: 2;
+  font-size: $f30;
+  color: #fff;
+  line-height: 45px;
+  box-sizing: border-box;
+  &__btn {
+    display: block;
+    position: relative;
+    padding: 0 0 0 24px;
+    width: 80px;
+    height: 45px;
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      left: 10px;
+      width: 9px;
+      height: 2px;
+      background: #fff;
+    }
+    &::before {
+      transform: rotate(-53deg);
+      bottom: 24px;
+    }
+    &::after {
+      transform: rotate(53deg);
+      top: 24px;
+    }
+  }
+}
