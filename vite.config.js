@@ -4,6 +4,7 @@ import reactRefresh from '@vitejs/plugin-react-refresh'
 import vitePluginImp from 'vite-plugin-imp'
 import viteCompression from 'vite-plugin-compression'
 import visualizer from 'rollup-plugin-visualizer'
+import banner from './plugin/banner'
 const env = process.argv[process.argv.length - 1]
 const isProd = env === 'production'
 // https://vitejs.dev/config/
@@ -45,6 +46,12 @@ export default defineConfig({
   },
   plugins: [
     reactRefresh(),
+    banner(`
+  author: tcly861204
+  temail: tcly861204@hotmail.com
+  date: ${new Date().toLocaleString()}
+  gitee: https://gitee.com/tcly861204/vite-react-cnode
+`),
     vitePluginImp({
       libList: [
         {
