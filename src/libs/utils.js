@@ -1,3 +1,11 @@
+/*
+  @Author: tcly861204
+  @Date:   2022/1/6 上午12:12:03
+  @Last Modified by:   tcly861204
+  @Last Modified time: 2022/1/6 上午12:12:03
+  @Github: https://tcly861204.github.io
+*/
+
 export const formatDate = (date, fmt) => {
   const o = {
     'M+': date.getMonth() + 1,
