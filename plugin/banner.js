@@ -4,6 +4,7 @@ let viteConfig = null
 module.exports = function (comment) {
   return {
     name: 'banner',
+    apply: 'build',
     configResolved(resolvedConfig) {
       viteConfig = resolvedConfig
     },
