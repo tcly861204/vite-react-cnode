@@ -1,3 +1,11 @@
+/*
+  @Author: tcly861204
+  @Email:  356671808@qq.com
+  @Date:   2021/12/26 上午8:19:52
+  @Last Modified by:   tcly861204
+  @Last Modified time: 2021/12/27 下午6:07:27
+  @Github: https://tcly861204.github.io
+*/
 import { COMMENT_DELETE, COMMENT_LIKE, DETAILS } from '../actionType'
 import Ajax from '@/service'
 

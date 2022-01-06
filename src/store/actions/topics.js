@@ -1,3 +1,11 @@
+/*
+  @Author: tcly861204
+  @Email:  356671808@qq.com
+  @Date:   2021/12/24 下午6:12:39
+  @Last Modified by:   tcly861204
+  @Last Modified time: 2021/12/26 上午8:17:46
+  @Github: https://tcly861204.github.io
+*/
 import { IS_SCROLL, TOPICS, TOPICS_PARAMS, SCROLLTOP } from '../actionType'
 import Ajax from '@/service'
 const topics = (payload) => ({

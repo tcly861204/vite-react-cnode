@@ -1,3 +1,11 @@
+/*
+  @Author: tcly861204
+  @Email:  356671808@qq.com
+  @Date:   2021/12/23 下午1:55:36
+  @Last Modified by:   tcly861204
+  @Last Modified time: 2021/12/26 下午6:39:42
+  @Github: https://tcly861204.github.io
+*/
 import { createStore, applyMiddleware } from 'redux'
 // 数据持久化工具
 import { persistReducer } from 'redux-persist'

@@ -1,3 +1,11 @@
+/*
+  @Author: tcly861204
+  @Email:  356671808@qq.com
+  @Date:   2021/12/24 下午5:04:37
+  @Last Modified by:   tcly861204
+  @Last Modified time: 2021/12/27 下午6:06:58
+  @Github: https://tcly861204.github.io
+*/
 import axios from 'axios'
 import config from './config'
 import Qs from 'qs'
@@ -64,13 +72,6 @@ axios.interceptors.response.use(
     return Promise.reject(error)
   }
 )
-
-/**
- * get方法
- * @param url [请求的url地址]
- * @param params [请求的参数]
- * @returns {Promise<any>}
- */
 export function get(url, params, serviceUrl, header) {
   if (serviceUrl) {
     getService(serviceUrl)
@@ -89,13 +90,6 @@ export function get(url, params, serviceUrl, header) {
       })
   })
 }
-
-/**
- * post方法
- * @param url [请求的url地址]
- * @param params [请求的参数]
- * @returns {Promise<any>}
- */
 export function post(url, params, serviceUrl, header, data, qs = true) {
   if (serviceUrl) {
     getService(serviceUrl)

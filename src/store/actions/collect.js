@@ -1,3 +1,11 @@
+/*
+  @Author: tcly861204
+  @Email:  356671808@qq.com
+  @Date:   2021/12/26 下午8:15:00
+  @Last Modified by:   tcly861204
+  @Last Modified time: 2021/12/26 下午8:21:02
+  @Github: https://tcly861204.github.io
+*/
 import { SET_COLLECT, COLLECT_LIST } from '../actionType'
 import Ajax from '@/service'
 import { Toast } from 'antd-mobile'
