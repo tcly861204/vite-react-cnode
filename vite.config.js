@@ -38,6 +38,7 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
+        charset: false,
         additionalData: '@import "./src/style/index.scss";',
       },
       less: {
@@ -52,7 +53,7 @@ export default defineConfig({
     // 给打包的代码加上信息
     banner(`
   author: tcly861204
-  temail: tcly861204@hotmail.com
+  email: tcly861204@hotmail.com
   date: ${new Date().toLocaleString()}
   gitee: https://gitee.com/tcly861204/vite-react-cnode
 `),
