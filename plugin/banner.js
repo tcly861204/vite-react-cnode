@@ -3,7 +3,7 @@ const fs = require('fs')
 let viteConfig = null
 module.exports = function (comment) {
   return {
-    name: 'banner',
+    name: 'vite-plugin-banner',
     apply: 'build',
     configResolved(resolvedConfig) {
       viteConfig = resolvedConfig
